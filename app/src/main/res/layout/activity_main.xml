@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/main"
+    >
+
+    <TextView
+        android:id="@+id/placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="using jsonPlaceHolder"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffff00"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/get_posts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/placeholder"
+        android:text="Get All Posts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="#336EFF"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        />
+
+
+    <Button
+        android:id="@+id/post_comment_by_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/get_posts"
+        android:text="Post Comments By PostId (Path)"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="#336EFF"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        />
+
+
+    <Button
+        android:id="@+id/query_parameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_comment_by_id"
+        android:text="Posts by UserId (Query)"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="#336EFF"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        />
+
+
+    <Button
+        android:id="@+id/query_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/query_parameter"
+        android:text="Posts by UserId (Query Map)"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="#336EFF"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        />
+
+
+    <Button
+        android:id="@+id/full_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/query_map"
+        android:text="Get full Url Method"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="#336EFF"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/post_methods"
+        android:layout_below="@+id/full_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+
+        <Button
+            android:id="@+id/post_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/query_map"
+            android:text="POST(BODY)"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="#FF9C33"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            />
+
+
+        <Button
+            android:id="@+id/form_url_encoded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/query_map"
+            android:text="FORM URL "
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="#FF9C33"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/post_methods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+
+        <Button
+            android:id="@+id/put"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/query_map"
+            android:text="PUT"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="#16A085"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            />
+
+
+        <Button
+            android:id="@+id/patch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/query_map"
+            android:text="PATCH"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="#16A085"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            />
+
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/query_map"
+            android:text="DELETE"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="#C70039 "
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_above="@+id/author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retrofit Rest Api"
+        android:textColor="#ffff00"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:id="@+id/author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="BY: NABEEL"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffff00"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        />
+
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="116dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="461dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="236dp"
+        android:background="@color/colorAccent"
+        android:text="JsonObject"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/json_array"
+        android:layout_width="110dp"
+        android:layout_height="27dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="144dp"
+
+        android:layout_marginTop="578dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="157dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="JsonArray"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
