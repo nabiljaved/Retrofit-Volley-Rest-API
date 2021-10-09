@@ -238,38 +238,50 @@
         android:layout_marginBottom="40dp"
         />
 
+
     <Button
         android:id="@+id/btn_test"
-        android:layout_width="116dp"
-        android:layout_height="34dp"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="135dp"
-        android:layout_marginTop="461dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="236dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="467dp"
+        android:layout_marginEnd="222dp"
+        android:layout_marginBottom="230dp"
         android:background="@color/colorAccent"
-        android:text="JsonObject"
+        android:text="VolleyObject"
         android:textColor="#fff"
         android:textSize="18sp" />
 
     <Button
         android:id="@+id/json_array"
-        android:layout_width="110dp"
-        android:layout_height="27dp"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="467dp"
+        android:layout_marginBottom="230dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="VolleyArray"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/volley_post"
+        android:layout_width="116dp"
+        android:layout_height="34dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="144dp"
-
-        android:layout_marginTop="578dp"
-        android:layout_marginEnd="157dp"
-        android:layout_marginBottom="157dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="576dp"
+        android:layout_marginBottom="121dp"
         android:background="@color/colorPrimaryDark"
-        android:text="JsonArray"
+        android:text="VolleyPost"
         android:textColor="#fff"
         android:textSize="18sp" />
 
